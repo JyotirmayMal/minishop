@@ -11,6 +11,14 @@ public class ProductRepository
 {
     private final List<Product> products = new ArrayList<>();
 
+    public ProductRepository() {
+        products.add(new Product(1, "Laptop", 1000.0));
+        products.add(new Product(2, "Smartphone", 500.0));
+        products.add(new Product(3, "Headphones", 100.0));
+        products.add(new Product(4, "Keyboard", 50.0));
+        products.add(new Product(5, "Monitor", 300.0));
+    }
+
     public List<Product> findAll() {
         return products;
     }
